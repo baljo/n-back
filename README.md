@@ -53,11 +53,20 @@ Most of the settings are self-explanatory, but here they are anyhow explained:
 - **Starting game sound (file name)**: This is the sound that is played after the breathing period, use a valid file name, otherwise...
 - **Log file (Person ID will be added in front):**: Why not leave this as it is? In that case, if your name is e.g. `Amnesia` (or whatever is stored in the setting `Test person ID`, then the resulting log file name will be `Amnesia_log.csv`.
 
+## 4.1 Change the order of the existing settings? Change the text or default value of the settings? More settings needed?
+This is only for the bravehearted! Take a backup of `settings.txt` before, as it is this file you will mess around with!
+- If you only want to change the order of the settings in the settings menu, use Notepad or whatever text editor and move the settings around. DO NOT move or remove the first line!
+- Changing the text of a setting (= what is visible in the settings menu) you do by changing the **second** "column". **Everything** between the first and second comma (,) you can change to whatever text you like, so you can e.g. use spaces creatively as I have done. DO NOT use comma (,) in the text though, this would lead to too many commas in the line and something will for sure break.
+- The default value of each setting is last on each line, change this if you want. Remember, **you** are the error handling, not the program!
+- Next to last (= third "column") is the maximum amount of characters that can be written from inside the settings menu. If you e.g. need to have a veeery long path to a file or folder, you can increase it here. This setting has no other implications.
+- If you can code in Python, you can create and use your own settings. Just add a new line at any point in the file (not as very first line though), create an ID of your choice, e.g. `My_fancy_new_setting` and utilize this new setting in the code. This is the way I myself started from 3 settings and ended up with 30 so far, clever huh?
+--In the code you can search for e.g. `person = read_setting('Person')` to see how it works. The function `read_setting` expects a setting to be read, what you provide as input is the **ID** of your setting, thus in this silly example you would use `my_fancy_new_setting = read_setting('My_fancy_new_setting')`
 
 ## 5 Improvement recommendations for you to consider doing yourself!
 - Error control! 
--- E.g., messing around manually with the settings file - unless you know what you are doing - will cause havoc!
--- Also using invalid log filenames, letters instead of numbers (why would you do that?), or not following the instructions might cause interesting behaviour...
+- E.g., messing around manually with the settings file - unless you know what you are doing - will cause havoc!
+- Also using invalid log filenames, letters instead of numbers (why would you do that?), or not following the instructions might cause interesting behaviour...
+
 - Supporting letters instead of/in addition to numbers in the game itself
 - Now the user needs to change the display resolution completely manually by giving x and y resolution. Change this so the user can select from a list of resolutions supported by the user's hardware.
 ## Credits
