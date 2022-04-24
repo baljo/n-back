@@ -29,14 +29,22 @@ The program spits out a `.log`-file in CSV-format, check this to calculate  scor
 
 There are quite a few settings, and even more can be added in an easy and clever(?) way. Obviously **you** are expected to code the behaviour of the new setting.
 Most of the settings are self-explanatory, but here they are anyhow explained:
-- Test person ID  : unique ID for the test person, can be a name, initials, or whatever
-- Remember both if number was shown/not shown?  : if YES, then you are expected to react both if the number shown was same (`Space/Left mouse`) or not same (`Enter/Right mouse`) as previous n. Only YES or NO should be stored here (no error handling implemented).
-- Single game: level (0-4) : Which level to play for the single game?
-- Multi game: levels (separate with /) : When playing multi games, the levels will be in this order. Guess what, separate the levels with /. Using something else will make you extremely unhappy!
-- Random multi games:   How many to play? : When playing random multi games, how many would you like to play?...
-- Levels? : ...and which are the levels? Use e.g. 0-4, 1-2, or whatever. Again, no error control.
-- 0-back target number: When playing level 0, which is the target number the user should react upon?
-- Breathing time (seconds): 
+- **Test person ID**  : unique ID for the test person, can be a name, initials, or whatever
+- **Remember both if number was shown/not shown?**  : if YES, then you are expected to react both if the number shown was same (`Space/Left mouse`) or not same (`Enter/Right mouse`) as previous n. Only YES or NO should be stored here (no error handling implemented).
+- **Single game: level (0-4)** : Which level to play for the single game?
+- **Multi game: levels (separate with /)** : When playing multi games, the levels will be in this order. Guess what, separate the levels with /. Using something else will make you extremely unhappy!
+- **Random multi games:   How many to play?** : When playing random multi games, how many would you like to play?...
+- **Levels?** : ...and which are the levels? Use e.g. 0-4, 1-2, or whatever. Again, no error control.
+- **0-back target number**: When playing level 0, which is the target number the user should react upon?
+- **Breathing time (seconds)**: Waiting time before the game starts, this is useful when simultaneously recording EEG-data to see if this relaxing period is visible or not in the data.
+- **Showing each slide this many seconds**: A slide = a single number that will be shown. Change this to make the test harder or even more harder. 
+- **Pause between each slide (seconds)**: = Pause between each slide (seconds)
+- **Pause between each game (seconds)**: Useful in multi game sessions to allow for more relaxation.
+- **Nr of slides 0-back -> 4-back**: How many slides (= numbers) should be shown for each level?
+- **Probability-% to see previous n-level number**: What is the probability that you will see the previous shown number? E.g., in level 1, and if the previous number shown was 5, probability is set to 25 %, then next number to be shown will be 5 with 25 % probability.
+- **Show scores after each session?**: YES if you want to see the score, anything else here means NO.
+- **Show pictures from picture folder?**: Do you want to see a smallish picture somewhere on the screen at the same time as a number is shown? Perhaps a picture of a spider or a snake? If you love these animals the game might be easier, otherwise perhaps not... YES or NO.
+- **Picture folder (only pictures are allowed in it)**: If previous setting = YES, then this folder will be used to find pictures. Best is to have pictures of same aspect ratio, otherwise they will be stretched. Only pictures are allowed in this folder, having other file types will make you very unhappy
 
 
 ## 5 Improvement recommendations for you to consider doing yourself!
