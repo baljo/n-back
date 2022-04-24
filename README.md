@@ -1,2 +1,4 @@
-# n-back
-N-back test platform
+
+# INTRODUCTION to this n-back test platform
+## 1
+## 2
