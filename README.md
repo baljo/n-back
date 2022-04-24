@@ -23,7 +23,7 @@ See the `Settings` section for more information.
 #### Feeling confident? Challenge yourself!
 If you want to challenge yourself, then you can adjust the settings so that you also need to react when the number shown is **not** same as the target number (level 0) or previous n number (level 1 - 5). The keys you use for this are `Enter` or `Right mouse button`.
 #### Want to see your performance over time?
-The program spits out a `.log`-file in CSV-format, check this to calculate  scores yourself and see your performance over time.
+The program spits out a log file in CSV-format, check this to calculate scores yourself and see your performance over time.
 
 ## 4 Settings
 
@@ -53,7 +53,7 @@ Most of the settings are self-explanatory, but here they are anyhow explained:
 - **Starting game sound (file name)**: This is the sound that is played after the breathing period, use a valid file name, otherwise...
 - **Log file (Person ID will be added in front):**: Why not leave this as it is? In that case, if your name is e.g. `Amnesia` (or whatever is stored in the setting `Test person ID`, then the resulting log file name will be `Amnesia_log.csv`.
 
-## 4.1 Change the order of the existing settings? Change the text or default value of the settings? More settings needed?
+### 4.1 Change the order of the existing settings? Change the text or default value of the settings? More settings needed?
 This is only for the bravehearted! Take a backup of `settings.txt` before, as it is this file you will mess around with!
 - If you only want to change the order of the settings in the settings menu, use Notepad or whatever text editor and move the settings around. DO NOT move or remove the first line!
 - Changing the text of a setting (= what is visible in the settings menu) you do by changing the **second** "column". **Everything** between the first and second comma (,) you can change to whatever text you like, so you can e.g. use spaces creatively as I have done. DO NOT use comma (,) in the text though, this would lead to too many commas in the line and something will for sure break.
@@ -62,12 +62,12 @@ This is only for the bravehearted! Take a backup of `settings.txt` before, as it
 - If you can code in Python, you can create and use your own settings. Just add a new line at any point in the file (not as very first line though), create an ID of your choice, e.g. `My_fancy_new_setting` and utilize this new setting in the code. This is the way I myself started from 3 settings and ended up with 30 so far, clever huh?
   - In the code you can search for e.g. `person = read_setting('Person')` to see how it works. The function `read_setting` expects a setting to be read, what you provide as input is the **ID** of your setting, thus in this silly example you would use `my_fancy_new_setting = read_setting('My_fancy_new_setting')`, and then you'd "just" need to add code somehow using this new setting.
 
-## 4.2 Saving/undoing setting changes? Restoring to factory settings?
+### 4.2 Saving/undoing setting changes? Restoring to factory settings?
 Scroll to the bottom in the settings menu, and you'll find these more or less self explanatory options:
 - Save settings: Use this to save any changes you have done, otherwise the changes will be lost when you return to the main menu or close the program.
 - Undo changes: Undo any changes you have done, e.g. if your cat jumped on your keyboard (has happened to me), then this would be the easiest way.
-- Restore factory settings: Restores the settings to the ones in the file `factory_settings.txt.`
-By the way, every time you save the settings, the old ones are copied to the file `OLD_settings.txt.` If you (or your cat) have really messed around, you can copy this file, or the content of it, to `settings.txt`
+- Restore factory settings: Restores the settings to the ones in the file `factory_settings.txt`.
+By the way, every time you save the settings, the old ones are copied to the file `OLD_settings.txt`. If you (or your cat) have really messed around, you can copy this file, or the content of it, to `settings.txt`.
 
 ## 5 Improvement recommendations for you to consider doing yourself!
 - Error control! 
