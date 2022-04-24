@@ -62,6 +62,13 @@ This is only for the bravehearted! Take a backup of `settings.txt` before, as it
 - If you can code in Python, you can create and use your own settings. Just add a new line at any point in the file (not as very first line though), create an ID of your choice, e.g. `My_fancy_new_setting` and utilize this new setting in the code. This is the way I myself started from 3 settings and ended up with 30 so far, clever huh?
   - In the code you can search for e.g. `person = read_setting('Person')` to see how it works. The function `read_setting` expects a setting to be read, what you provide as input is the **ID** of your setting, thus in this silly example you would use `my_fancy_new_setting = read_setting('My_fancy_new_setting')`, and then you'd "just" need to add code somehow using this new setting.
 
+## 4.2 Saving/undoing setting changes? Restoring to factory settings?
+Scroll to the bottom in the settings menu, and you'll find these more or less self explanatory options:
+- Save settings: Use this to save any changes you have done, otherwise the changes will be lost when you return to the main menu or close the program.
+- Undo changes: Undo any changes you have done, e.g. if your cat jumped on your keyboard (has happened to me), then this would be the easiest way.
+- Restore factory settings: Restores the settings to the ones in the file `factory_settings.txt.`
+By the way, every time you save the settings, the old ones are copied to the file `OLD_settings.txt.` If you (or your cat) have really messed around, you can copy this file, or the content of it, to `settings.txt`
+
 ## 5 Improvement recommendations for you to consider doing yourself!
 - Error control! 
   - E.g., messing around manually with the settings file - unless you know what you are doing - will cause havoc!
