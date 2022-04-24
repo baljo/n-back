@@ -11,8 +11,8 @@ The objective is to test and hopefully also improve your working memory capacity
 There are 5 levels to choose between, what level/levels you want to test is set in the `Settings` menu.
 - Level 0: you are supposed to click `Space` or `Left mouse button` when you see the target number. The target number is set in the settings menu, default is 4.
 - Level 1 - 4: You are supposed to click `Space` or `Left mouse button` when the previous n number is repeated. 
--- E.g., if level is 1 and you have seen these numbers: 2, 8, 1, 1 - then you should have reacted once you saw the second 1.
--- If level is 2 and you have seen these numbers: 3, 1, 0, 9, 0, 9 - then you should have reacted when you saw the second 0 and second 9.
+  - E.g., if level is 1 and you have seen these numbers: 2, 8, 1, 1 - then you should have reacted once you saw the second 1.
+  - If level is 2 and you have seen these numbers: 3, 1, 0, 9, 0, 9 - then you should have reacted when you saw the second 0 and second 9.
 #### Testing your memory, quick and easy
 Why not start with the easiest i.e., `Play single game`. Unless you have messed with the default settings, you will need to react when seeing number 4.
 When the test has ended, you will see your scores. If you get tired during the test, you can abort with `Esc`.
@@ -60,15 +60,16 @@ This is only for the bravehearted! Take a backup of `settings.txt` before, as it
 - The default value of each setting is last on each line, change this if you want. Remember, **you** are the error handling, not the program!
 - Next to last (= third "column") is the maximum amount of characters that can be written from inside the settings menu. If you e.g. need to have a veeery long path to a file or folder, you can increase it here. This setting has no other implications.
 - If you can code in Python, you can create and use your own settings. Just add a new line at any point in the file (not as very first line though), create an ID of your choice, e.g. `My_fancy_new_setting` and utilize this new setting in the code. This is the way I myself started from 3 settings and ended up with 30 so far, clever huh?
---In the code you can search for e.g. `person = read_setting('Person')` to see how it works. The function `read_setting` expects a setting to be read, what you provide as input is the **ID** of your setting, thus in this silly example you would use `my_fancy_new_setting = read_setting('My_fancy_new_setting')`
+  - In the code you can search for e.g. `person = read_setting('Person')` to see how it works. The function `read_setting` expects a setting to be read, what you provide as input is the **ID** of your setting, thus in this silly example you would use `my_fancy_new_setting = read_setting('My_fancy_new_setting')`, and then you'd "just" need to add code somehow using this new setting.
 
 ## 5 Improvement recommendations for you to consider doing yourself!
 - Error control! 
-- E.g., messing around manually with the settings file - unless you know what you are doing - will cause havoc!
-- Also using invalid log filenames, letters instead of numbers (why would you do that?), or not following the instructions might cause interesting behaviour...
-
+  - E.g., messing around manually with the settings file - unless you know what you are doing - will cause havoc!
+  - Also using invalid log filenames, letters instead of numbers (why would you do that?), or not following the instructions might cause interesting behaviour...
 - Supporting letters instead of/in addition to numbers in the game itself
 - Now the user needs to change the display resolution completely manually by giving x and y resolution. Change this so the user can select from a list of resolutions supported by the user's hardware.
+- Anything and everything else!
+  - I learned 80 % of my current Python skills while writing this software, this might be visible in the code, so you are welcome to improve it! 
 ## Credits
 - sound from https://soundbible.com/1598-Electronic-Chime.html
 - pygame https://www.pygame.org/news
