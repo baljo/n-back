@@ -18,7 +18,10 @@ There are 5 levels to choose between, what level/levels you want to test is set 
 Why not start with the easiest i.e., `Play single game`. Unless you have messed with the default settings, you will need to react when seeing number 4.
 When the test has ended, you will see your scores. If you get tired during the test, you can abort with `Esc`.
 #### Testing your memory, slow and hard
-Use `Play multi games` or `Play random multi games`. These work similarly as the single game, but instead of only one game, you will play n amount of games according to the settings. Scores will only be shown after the final game.
+Use `Play multi games` or `Play random multi games`. These work similarly as the single game, but instead of only one game, you will play n amount of games according to the settings. 
+Scores will only be shown after the final game. Tired? --> click `Esc`.
+#### Feeling confident? Challenge yourself!
+If you want to challenge yourself, then you can adjust the settings so that you also need to react when the number shown is **not** same as the target (level 0) or previous n number (level 1 - 5). The keys you use for this are `Enter` or `Right mouse button`.
 
 ## 4 Settings
 ## 5 Improvement recommendations for you to consider doing yourself!
