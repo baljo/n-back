@@ -26,9 +26,19 @@ If you want to challenge yourself, then you can adjust the settings so that you 
 The program spits out a `.log`-file in CSV-format, check this to calculate  scores yourself and see your performance over time.
 
 ## 4 Settings
+
 There are quite a few settings, and even more can be added in an easy and clever(?) way. Obviously **you** are expected to code the behaviour of the new setting.
 Most of the settings are self-explanatory, but here they are anyhow explained:
-- 
+- Test person ID  : unique ID for the test person, can be a name, initials, or whatever
+- Remember both if number was shown/not shown?  : if YES, then you are expected to react both if the number shown was same (`Space/Left mouse`) or not same (`Enter/Right mouse`) as previous n. Only YES or NO should be stored here (no error handling implemented).
+- Single game: level (0-4) : Which level to play for the single game?
+- Multi game: levels (separate with /) : When playing multi games, the levels will be in this order. Guess what, separate the levels with /. Using something else will make you extremely unhappy!
+- Random multi games:   How many to play? : When playing random multi games, how many would you like to play?...
+- Levels? : ...and which are the levels? Use e.g. 0-4, 1-2, or whatever. Again, no error control.
+- 0-back target number: When playing level 0, which is the target number the user should react upon?
+- Breathing time (seconds): 
+
+
 ## 5 Improvement recommendations for you to consider doing yourself!
 - Error control! 
 -- E.g., messing around manually with the settings file - unless you know what you are doing - will cause havoc!
