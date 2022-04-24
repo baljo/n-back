@@ -44,7 +44,14 @@ Most of the settings are self-explanatory, but here they are anyhow explained:
 - **Probability-% to see previous n-level number**: What is the probability that you will see the previous shown number? E.g., in level 1, and if the previous number shown was 5, probability is set to 25 %, then next number to be shown will be 5 with 25 % probability.
 - **Show scores after each session?**: YES if you want to see the score, anything else here means NO.
 - **Show pictures from picture folder?**: Do you want to see a smallish picture somewhere on the screen at the same time as a number is shown? Perhaps a picture of a spider or a snake? If you love these animals the game might be easier, otherwise perhaps not... YES or NO.
-- **Picture folder (only pictures are allowed in it)**: If previous setting = YES, then this folder will be used to find pictures. Best is to have pictures of same aspect ratio, otherwise they will be stretched. Only pictures are allowed in this folder, having other file types will make you very unhappy
+- **Picture folder (only pictures are allowed in it)**: If previous setting = YES, then this folder will be used to find pictures. Best is to have pictures of same aspect ratio, otherwise they will be stretched. Only pictures are allowed in this folder, having other types of files there will make you very unhappy! Easiest is to create a subfolder in the folder where this program is saved, name it `Pictures`, and then just write `Pictures` in this setting.
+- **Picture position - X + Y**: Where on the screen do you want this picture...
+- **Picture size - X + Y**: ...and how large should it be?
+- **Screen resolution - X + Y**: Depends on your screen, try e.g. with 1200 x 768.
+- **Font size - Header**: This is the size of the text shown before a level starts.
+- **Font size - Number**: Size of the magic numbers to be shown
+- **Starting game sound (file name)**: This is the sound that is played after the breathing period, use a valid file name, otherwise...
+- **Log file (Person ID will be added in front):**: Why not leave this as it is? In that case, if your name is e.g. `Amnesia` (or whatever is stored in the setting `Test person ID`, then the resulting log file name will be `Amnesia_log.csv`.
 
 
 ## 5 Improvement recommendations for you to consider doing yourself!
