@@ -3,7 +3,15 @@ This test platform/game was developed **solely** for the purpose of assessing wo
 ## 1 What is a n-back task?
 The n-back task is a continuous performance task that is commonly used as an assessment in psychology and cognitive neuroscience to measure a part of working memory and working memory capacity. The n-back was introduced by Wayne Kirchner in 1958. See https://en.wikipedia.org/wiki/N-back for more information.
 ## 2 Installation
-Copy the files to a folder of your choice and start the software by running nback_main.py with your favourite Python-IDE or from the command prompt. The software was developed using Python version 3.10.2, but as nothing really fancy is being used, somewhat older and newer versions should work. 
+Prerequisites:
+- Python version 3.10.2 however, as nothing really fancy is being used, somewhat older and newer versions should work.
+
+Installation:
+- Install pygame and pygame-menu by executing these from a command prompt:
+  - pip install pygame
+  - pip install pygame-menu
+- Copy the files in this repository to a folder of your choice.
+- Start the software by running nback_main.py with your favourite Python-IDE or from the command prompt. 
 ## 3 Instructions for use
 The objective is to test and hopefully also improve your working memory capacity over time.
 
